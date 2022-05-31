@@ -70,13 +70,9 @@ public class TelaResolucao extends javax.swing.JFrame {
 
     private void btnResolucaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResolucaoActionPerformed
         Dimension resolucaoDaTela = Toolkit.getDefaultToolkit().getScreenSize();
-        lblMensagem.setText(round(resolucaoDaTela.getWidth())+" x "+round(resolucaoDaTela.getHeight()));
-        
+        lblMensagem.setText(round(resolucaoDaTela.getWidth())+" x "+round(resolucaoDaTela.getHeight()));        
     }//GEN-LAST:event_btnResolucaoActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
