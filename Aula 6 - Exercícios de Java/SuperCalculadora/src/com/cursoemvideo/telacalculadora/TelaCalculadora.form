@@ -41,22 +41,19 @@
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Component id="jSpinner1" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="lblResDiv" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblResEleCubo" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblResRaizQ" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblResRaizCub" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblResValorAbs" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtValor" alignment="0" min="-2" pref="90" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel3" min="-2" pref="171" max="-2" attributes="0"/>
+                          <Group type="102" alignment="1" attributes="0">
                               <Component id="btnCalcular" min="-2" pref="118" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="50" max="32767" attributes="0"/>
-                          </Group>
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="lblResDiv" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lblResEleCubo" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lblResRaizQ" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lblResRaizCub" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lblResValorAbs" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="32767" attributes="0"/>
-                              <Component id="jLabel3" min="-2" pref="171" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -73,8 +70,8 @@
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jSpinner1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="btnCalcular" alignment="3" min="-2" pref="52" max="-2" attributes="0"/>
+                  <Component id="txtValor" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnCalcular" alignment="1" min="-2" pref="52" max="-2" attributes="0"/>
               </Group>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
@@ -128,7 +125,12 @@
         <Property name="text" type="java.lang.String" value="Informe um valor:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JSpinner" name="jSpinner1">
+    <Component class="javax.swing.JSpinner" name="txtValor">
+      <Properties>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[70, 22]"/>
+        </Property>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btnCalcular">
       <Properties>
@@ -137,6 +139,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Calcular"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCalcularActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
