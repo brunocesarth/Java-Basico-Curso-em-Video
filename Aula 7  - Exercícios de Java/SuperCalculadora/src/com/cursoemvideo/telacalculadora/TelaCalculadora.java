@@ -45,6 +45,21 @@ public class TelaCalculadora extends javax.swing.JFrame {
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/CALCULADORA.png"))); // NOI18N
 
+        lblResDiv.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        lblResDiv.setForeground(new java.awt.Color(0, 0, 204));
+
+        lblResEleCubo.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        lblResEleCubo.setForeground(new java.awt.Color(0, 0, 204));
+
+        lblResRaizQ.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        lblResRaizQ.setForeground(new java.awt.Color(0, 0, 204));
+
+        lblResRaizCub.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        lblResRaizCub.setForeground(new java.awt.Color(0, 0, 204));
+
+        lblResValorAbs.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        lblResValorAbs.setForeground(new java.awt.Color(0, 0, 204));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -71,12 +86,10 @@ public class TelaCalculadora extends javax.swing.JFrame {
                             .addComponent(lblResRaizCub)
                             .addComponent(lblResValorAbs)
                             .addComponent(txtValor, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(btnCalcular, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(25, 25, 25)))))
+                            .addComponent(btnCalcular, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -85,10 +98,11 @@ public class TelaCalculadora extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(txtValor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnCalcular, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnCalcular, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel2)
+                        .addComponent(txtValor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(53, 53, 53)
@@ -114,7 +128,7 @@ public class TelaCalculadora extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addComponent(jLabel3)))
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addContainerGap(67, Short.MAX_VALUE))
         );
 
         pack();
@@ -133,9 +147,9 @@ public class TelaCalculadora extends javax.swing.JFrame {
         lblTextoRaizCub.setText("Raiz Cúbica");
         lblTextoValorAbs.setText("Valor Absoluto");
         lblResDiv.setText(Integer.toString(div));
-        lblResEleCubo.setText(Float.toString(cubo));
-        lblResRaizQ.setText(Float.toString(raizQ));
-        lblResRaizCub.setText(Float.toString(raizCub));
+        lblResEleCubo.setText(String.format("%.2f",cubo));
+        lblResRaizQ.setText(String.format("%.2f",raizQ));
+        lblResRaizCub.setText(String.format("%.2f",raizCub));
         lblResValorAbs.setText(Integer.toString(ValorAbs));
     }//GEN-LAST:event_btnCalcularActionPerformed
 
