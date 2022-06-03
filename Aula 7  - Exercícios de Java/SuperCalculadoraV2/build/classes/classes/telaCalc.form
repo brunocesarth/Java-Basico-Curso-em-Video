@@ -33,7 +33,7 @@
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="txtNum" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="jButton1" min="-2" pref="138" max="-2" attributes="0"/>
+                      <Component id="btnCalc" min="-2" pref="138" max="-2" attributes="0"/>
                   </Group>
                   <Component id="panCalc" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
@@ -55,7 +55,7 @@
                           <Component id="txtNum" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jButton1" min="-2" pref="59" max="-2" attributes="0"/>
+                      <Component id="btnCalc" min="-2" pref="59" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="panCalc" min="-2" max="-2" attributes="0"/>
                   </Group>
@@ -78,7 +78,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton1">
+    <Component class="javax.swing.JButton" name="btnCalc">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="14" style="0"/>
@@ -89,7 +89,7 @@
         <Property name="text" type="java.lang.String" value="Calcular"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCalcActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
