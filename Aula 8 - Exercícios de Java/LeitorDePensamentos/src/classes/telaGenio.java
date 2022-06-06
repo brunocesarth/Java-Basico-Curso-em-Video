@@ -57,17 +57,12 @@ public class telaGenio extends javax.swing.JFrame {
 
     private void btnPalpiteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPalpiteActionPerformed
         double n = 1 + Math.random() * (6-1);
-        int valor = (int) n;
-        
-        int num = Integer.parseInt(txtVal.getValue().toString());
-        
+        int valor = (int) n;        
+        int num = Integer.parseInt(txtVal.getValue().toString());        
         String f1 = "ACERTOU!";
-        String f2 = "<html>ERROU! Eu pensei no valor <html>" + valor;
-        
-        String res = (valor == num)?f1:f2;
-        
-        lblFrase.setFont(new Font("Arial Black", Font.PLAIN, 13));
-        
+        String f2 = "<html>ERROU! Eu pensei no valor <html>" + valor;        
+        String res = (valor == num)?f1:f2;        
+        lblFrase.setFont(new Font("Arial Black", Font.PLAIN, 13));        
         lblFrase.setText(res);
     }//GEN-LAST:event_btnPalpiteActionPerformed
 
